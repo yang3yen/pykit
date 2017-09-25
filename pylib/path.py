@@ -11,7 +11,7 @@ __all__ = ['splitext', 'joinext', 'list_dir']
 def splitext(path):
     """Get the extension from a path"""
     root, ext = os.path.splitext(path)
-    return root, ext if not ext else ext[1:]
+    return (root, ext) if not ext else (root, ext[1:])
 
 
 def joinext(name, ext, sep='.'):
