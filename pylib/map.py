@@ -225,5 +225,3 @@ if __name__ == '__main__':
     print gcj02_to_bd09(116.42546, 32.98695)
     print bd09_to_gcj02(*gcj02_to_bd09(116.42546, 32.98695))
     print gcj02_to_wgs84(*wgs84_to_gcj02(116.42546, 32.98695))
-    gd = map_factory(key='34b2c1dd98f01d03133b8194c4c9e454')
-    print gd.geo_decode(116.42546, 39.98695)
